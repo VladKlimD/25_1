@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include "operational-tools.h"
 
 void input_Command(std::string& command) {
@@ -9,11 +10,12 @@ void input_Command(std::string& command) {
 
 int main() {
     std::string command;
+    std::vector<coordinates> scalpel_Uses, hemostat_Uses, tweezers_Uses, suture_Uses;
 
     for (;;) {
         input_Command(command);
         if (command == "scalpel") {
-            scalpel_Uses.push_back(scalpel());
+            scalpel(scalpel_Uses);
             break;
         }
         std::cout << "You should use scalpel at first\n";
@@ -22,16 +24,16 @@ int main() {
     while (scalpel_Uses.size() != 0) {
         input_Command(command);
         if (command == "scalpel") {
-            scalpel_Uses.push_back(scalpel());
+            scalpel(scalpel_Uses);
         }
         else if (command == "hemostat") {
-            hemostat_Uses.push_back(hemostat());
+            hemostat(hemostat_Uses);
         }
         else if (command == "tweezers") {
-            tweezers_Uses.push_back(tweezers());
+            tweezers(tweezers_Uses);
         }
         else if (command == "suture") {
-            suture_Uses.push_back(suture());
+            suture(suture_Uses, scalpel_Uses);
         }
         else std::cout << "Unknown command. Retry your enter\n";
     }

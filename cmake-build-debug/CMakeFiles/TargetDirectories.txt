@@ -1,0 +1,5 @@
+E:/Clion Projects/Skillbox/#25/25_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Clion Projects/Skillbox/#25/25_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Clion Projects/Skillbox/#25/25_1/cmake-build-debug/src/CMakeFiles/25_1.dir
+E:/Clion Projects/Skillbox/#25/25_1/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+E:/Clion Projects/Skillbox/#25/25_1/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
